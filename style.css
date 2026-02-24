@@ -1,0 +1,113 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(1355deg,#15173D,#982598,#E491C9,#F1E9E9);
+}
+.container h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#84B179;
+    position: relative;
+    margin: 5px;
+
+}
+.container h1::after{
+    content:"";
+    position: absolute;
+    bottom:-6px;
+    width:0%;
+    left:0;
+    height: 3px;
+    background-color:#8A7650;
+    transition: 0.2s;
+    margin-bottom: 4px;
+}
+.container h1:hover::after{
+    width:100%;
+}
+.container #text,#amount{
+  width: 90%;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+.container #category{
+    border-radius: 4px;
+    border:#84B179;
+    margin:15px;
+    color:#0B2D72;
+    height: 20px;
+    box-shadow: 6px 6px 12px #EBF4F6, -6px -6px 12px #EBF4F6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container #submit{
+
+    width:35%;
+    font-family: 'Poppins';
+    color: #FDCFFA;
+    margin: 14px;
+    padding: 0.7em 1.7em;
+    font-size: 12px;
+    border-radius: 0.5rem;
+    background: #4E56C0;
+    cursor: pointer;
+    border: 1px solid #301ca0;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #4E56C0, -6px -6px 12px #301ca0;
+}
+
+#transactionList li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f5f7fb;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#transactionList li button {
+  margin-left: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+#transactionList li:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+#transactionList li:active{
+      transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+#transactionList li button:hover{
+      transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+#transactionList li button:active{
+    background: #4E56C0;
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #EBF4F6;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: system-ui, Arial, sans-serif;
+}
